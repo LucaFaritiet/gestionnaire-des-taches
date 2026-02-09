@@ -9,6 +9,8 @@ namespace Workshop5Avaloniapp.ViewModels
 {
     public partial class MainWindowViewModel : ViewModelBase
     {
+        private const double BytesToMegabytes = 1024.0 * 1024.0;
+
         [ObservableProperty]
         private ObservableCollection<ProcessInfo> _processes = new();
 
@@ -32,7 +34,7 @@ namespace Workshop5Avaloniapp.ViewModels
             {
                 try
                 {
-                    var memoryMB = process.WorkingSet64 / 1024.0 / 1024.0;
+                    var memoryMB = process.WorkingSet64 / BytesToMegabytes;
                     Processes.Add(new ProcessInfo
                     {
                         ProcessId = process.Id,
