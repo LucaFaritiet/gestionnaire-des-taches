@@ -1417,23 +1417,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lucaf\\.nuget\\packages\\": {},
+    "C:\\Users\\esteb\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lucaf\\Desktop\\cours_cesi\\dev\\projets\\c-sharp\\Workshop5Avaloniapp\\Workshop5Avaloniapp\\Workshop5Avaloniapp.csproj",
+      "projectUniqueName": "C:\\Users\\esteb\\Desktop\\CESI\\A3\\bloc 3\\prosit 5\\gestionnaire-des-taches\\Workshop5Avaloniapp\\Workshop5Avaloniapp.csproj",
       "projectName": "Workshop5Avaloniapp",
-      "projectPath": "C:\\Users\\lucaf\\Desktop\\cours_cesi\\dev\\projets\\c-sharp\\Workshop5Avaloniapp\\Workshop5Avaloniapp\\Workshop5Avaloniapp.csproj",
-      "packagesPath": "C:\\Users\\lucaf\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lucaf\\Desktop\\cours_cesi\\dev\\projets\\c-sharp\\Workshop5Avaloniapp\\Workshop5Avaloniapp\\obj\\",
+      "projectPath": "C:\\Users\\esteb\\Desktop\\CESI\\A3\\bloc 3\\prosit 5\\gestionnaire-des-taches\\Workshop5Avaloniapp\\Workshop5Avaloniapp.csproj",
+      "packagesPath": "C:\\Users\\esteb\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\esteb\\Desktop\\CESI\\A3\\bloc 3\\prosit 5\\gestionnaire-des-taches\\Workshop5Avaloniapp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\lucaf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\esteb\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

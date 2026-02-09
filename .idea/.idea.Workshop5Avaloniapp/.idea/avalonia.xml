@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="Workshop5Avaloniapp/App.axaml" value="Workshop5Avaloniapp/Workshop5Avaloniapp.csproj" />
+        <entry key="Workshop5Avaloniapp/ListProcess.axaml" value="Workshop5Avaloniapp/Workshop5Avaloniapp.csproj" />
+        <entry key="Workshop5Avaloniapp/Views/ListProcess.axaml" value="Workshop5Avaloniapp/Workshop5Avaloniapp.csproj" />
+        <entry key="Workshop5Avaloniapp/Views/MainWindow.axaml" value="Workshop5Avaloniapp/Workshop5Avaloniapp.csproj" />
+        <entry key="Workshop5Avaloniapp/Views/Window1.axaml" value="Workshop5Avaloniapp/Workshop5Avaloniapp.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
