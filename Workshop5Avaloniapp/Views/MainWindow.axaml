@@ -3,11 +3,12 @@
         xmlns:vm="using:Workshop5Avaloniapp.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600"
         x:Class="Workshop5Avaloniapp.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
-        Title="Workshop5Avaloniapp">
+        Title="Gestionnaire des Tâches"
+        Width="900" Height="600">
 
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,
@@ -15,6 +16,27 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <DockPanel Margin="10">
+        <!-- Top toolbar -->
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Spacing="10" Margin="0,0,0,10">
+            <Button Command="{Binding RefreshProcessesCommand}" Content="Actualiser" Width="100"/>
+            <Button Command="{Binding KillProcessCommand}" Content="Terminer" Width="100" 
+                    IsEnabled="{Binding SelectedProcess, Converter={x:Static ObjectConverters.IsNotNull}}"/>
+        </StackPanel>
+
+        <!-- Process list -->
+        <DataGrid ItemsSource="{Binding Processes}" 
+                  SelectedItem="{Binding SelectedProcess}"
+                  AutoGenerateColumns="False"
+                  GridLinesVisibility="All"
+                  IsReadOnly="True"
+                  SelectionMode="Single">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nom du Processus" Binding="{Binding ProcessName}" Width="2*"/>
+                <DataGridTextColumn Header="PID" Binding="{Binding ProcessId}" Width="*"/>
+                <DataGridTextColumn Header="Mémoire" Binding="{Binding MemoryUsage}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </DockPanel>
 
 </Window>
